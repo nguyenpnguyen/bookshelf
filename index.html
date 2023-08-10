@@ -17,33 +17,177 @@ Acknowledgement:
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Front page of Bookshelf">
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<header>
 		<!-- Header -->
-		<img src="assets/logo-light.png" alt="Logo of Bookshelf">
-		<h1>Bookshelf</h1>
-		<!-- Navigation bar -->
-		<nav>
-			<div><a href="index.html">Home</a></div>
-			<div><a href="pages/fiction/fiction.html">Fiction</a></div>
-			<div><a href="pages/nonfiction/nonfiction">Non-fiction</a></div>
-			<div><a href="pages/textbook/textbook">Textbook</a></div>
+		<nav id="nav-top">
+			<a href="index.html"><img id="logo" src="assets/logo-light.png" alt="Logo of Bookshelf">
+			</a>
+			<!-- Navigation bar -->
+			<a href="index.html"><button type="button" class="nav-button">
+					Home
+				</button></a>
+			<a href="fiction.html"><button type="button" class="nav-button">
+					Fiction
+				</button></a>
+			<a href="textbook.html"><button type="button" class="nav-button">
+					Textbook
+				</button></a>
 		</nav>
 	</header>
-	<section>
+	<main>
 		<!-- Content of different book categories goes here. -->
-	</section>
+		<section class="book-category">
+			<div>
+				<a href="fiction.html">
+					<h2>Fiction</h2>
+				</a>
+			</div>
+			<div class="book-display">
+				<!--Book 1-->
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book1.jpg" alt="Book 1">
+					</div>
+					<div class="book-title">
+						<a href="pygmalion.html">
+							<h3>Book 1</h3>
+						</a>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book2.jpg" alt="Book 2">
+					</div>
+					<div class="book-title">
+						<h3>Book 2</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book3.jpg" alt="Book 3">
+					</div>
+					<div class="book-title">
+						<h3>Book 3</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-display">
+				<!--Book 1-->
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book4.jpg" alt="Book 4">
+					</div>
+					<div class="book-title">
+						<h3>Book 4</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book5.jpg" alt="Book 5">
+					</div>
+					<div class="book-title">
+						<h3>Book 5</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book6.jpg" alt="Book 5">
+					</div>
+					<div class="book-title">
+						<h3>Book 6</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="book-category">
+			<div>
+				<a href="textbook.html">
+					<h2>Textbook</h2>
+				</a>
+			</div>
+
+			<div class="book-display">
+				<!--Book 1-->
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book1.jpg" alt="Book 1">
+					</div>
+					<div class="book-title">
+						<h3>Book 1</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book2.jpg" alt="Book 2">
+					</div>
+					<div class="book-title">
+						<h3>Book 2</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book3.jpg" alt="Book 3">
+					</div>
+					<div class="book-title">
+						<h3>Book 3</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="book-display">
+				<!--Book 1-->
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book4.jpg" alt="Book 4">
+					</div>
+					<div class="book-title">
+						<h3>Book 4</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book5.jpg" alt="Book 5">
+					</div>
+					<div class="book-title">
+						<h3>Book 5</h3>
+					</div>
+				</div>
+
+				<div class="book">
+					<div class="book-image">
+						<img src="assets/book6.jpg" alt="Book 5">
+					</div>
+					<div class="book-title">
+						<h3>Book 6</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 	<footer>
 		<!-- Footer -->
 		<!-- Navigation bar -->
-		<nav>
-			<div><a href="pages/about.html">About</a></div>
-			<div><a href="pages/privacy.html">Privacy Policy</a></div>
-			<div><a href="pages/terms.html">Terms and Conditions</a></div>
-			<div><a href="pages/copyright.html">Copyright</a></div>
-			<div><a href="pages/contact.html">Contact Us</a></div>
+		<nav id="nav-bottom">
+			<div><a href="about.html">About</a></div>
+			<div><a href="privacy.html">Privacy Policy</a></div>
+			<div><a href="terms.html">Terms and Conditions</a></div>
+			<div><a href="copyright.html">Copyright</a></div>
+			<div><a href="contact.html">Contact Us</a></div>
 		</nav>
 	</footer>
 </body>

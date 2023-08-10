@@ -1,0 +1,85 @@
+<!-- 
+RMIT University Vietnam 
+Course: COSC2430 Web Programming 
+Semester: 2023B 
+Assessment: Assignment 1 
+Author: Nguyen Phuc Nguyen
+ID: s4025306
+Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bookshelf</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Front page of Bookshelf">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<!-- Header -->
+		<nav id="nav-top">
+			<a href="index.html"><img id="logo" src="assets/logo-light.png" alt="Logo of Bookshelf">
+			</a>
+			<!-- Navigation bar -->
+			<a href="index.html"><button type="button" class="nav-button">
+					Home
+				</button></a>
+			<a href="fiction.html"><button type="button" class="nav-button">
+					Fiction
+				</button></a>
+			<a href="textbook.html"><button type="button" class="nav-button">
+					Textbook
+				</button></a>
+		</nav>
+	</header>
+	<main>
+		<p id="breadcrumb"><a href="index.html">Home</a> > <a href="fiction.html">Fiction</a> > Pygmalion</p>
+		<section class="book-img-price">
+			<div class="main-img">
+				<img src="assets/pygmalion-front.jpg" alt="Pygmalion front cover">
+			</div>
+			<div class="small-img">
+				<img src="assets/pygmalion-back.jpg" alt="Pygmalion back cover">
+				<img src="assets/pygmalion-side.jpg" alt="Pygmalion side cover">
+				<img src="assets/pygmalion-opened.jpg" alt="Pygmalion opened">
+			</div>
+			<div class="book-price">
+				<h2>50 000 VND</h2>
+				<button type="button" id="add-to-cart">Add to cart</button>
+			</div>
+		</section>
+		<section class="book-description">
+			<h1 id="book-name">Pygmalion</h1>
+			<p id="book-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad
+				nisi Lorem
+				pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud
+				ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+				officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
+				cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+				eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
+				ullamco ut ea consectetur et est culpa et culpa duis.</p>
+		</section>
+	</main>
+	<footer>
+		<!-- Footer -->
+		<!-- Navigation bar -->
+		<nav id="nav-bottom">
+			<div><a href="about.html">About</a></div>
+			<div><a href="privacy.html">Privacy Policy</a></div>
+			<div><a href="terms.html">Terms and Conditions</a></div>
+			<div><a href="copyright.html">Copyright</a></div>
+			<div><a href="contact.html">Contact Us</a></div>
+		</nav>
+	</footer>
+</body>
+
+</html>
