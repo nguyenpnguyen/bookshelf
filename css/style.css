@@ -1,29 +1,40 @@
+/*
+RMIT University Vietnam 
+Course: COSC2430 Web Programming 
+Semester: 2023B 
+Assessment: Assignment 1 
+Author: Nguyen Phuc Nguyen
+ID: s4025306
+Acknowledgement: Color pallete - https://colorhunt.co/palette/f9f5ebe4dccfea5455002b5b 
+*/
+
 * {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-	color: #4c4f69;
+	color: #002B5B;
 }
 
 body {
-	background-color: #eff1f5;
+	background-color: #F9F5EB;
 }
 
-.book-category h2 {
-	width: 15%;
+.category-title h2 a {
+	width: 20%;
 	margin: auto;
 	padding: 0.5em;
 	text-align: center;
 	font-size: 1.5em;
-	color: #4c4f69	;
+	color: #002B5B;
 	font-weight: 500;
+	font-family: 'Roboto Serif', serif;
 }
 
-.book-category h2:hover, .book-category h2:active{
-	color: #6c6f85;	
+.category-title h2 a:hover, .category-title h2 a:active{
+	color: #EA5455;	
 }
 
 .book-display h3:hover, .book-display h3:active{
-	color: #d20f39;	
+	color: #EA5455;	
 }
 
 a:link, a:visited {
@@ -31,34 +42,46 @@ a:link, a:visited {
 }
 
 header {
-	background-color: #dce0e8;
+	display: flex;
+	background-color: #002B5B;
 	box-shadow: 0px 1px 2px 1px #bcc0cc;
 }
 
 footer {
-	background-color: #dce0e8;
+	background-color: #002B5B;
 	box-shadow: 0px -1px 2px 1px #bcc0cc;
 }
 
+footer a {
+	color: #F9F5EB;
+}
+
 #logo {
-	width: 180px;
-	padding: 0em;
+	width: 220px;
+	padding: 1em;
+	margin: auto;
 }
 
 .book-category, .book-image, .book-title {
 	padding: 0.5em;
 	margin: 0.5em;
+	text-align: center;
 }
 
-.book-image {
-	height: 200px;
+.book-image img {
+	max-height: 250px;
 }
 
 .book-display {
 	display: flex;
 	justify-content: space-around;
-	background-color: #e6e9ef;
+	background-color: #E4DCCF;
 	padding: 0.5em;
+}
+
+.book-title {
+	max-width: 180px;
+	margin: auto;
 }
 
 nav {
@@ -67,23 +90,10 @@ nav {
 	align-items: center;
 	padding: 0.5em;
 	width: 100%;
+	color: #EA5455;
 }
 
-nav button {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 1em;
-	background-color: #dce0e8;
-	border: 0;
-	color: #4c4f69;
-	width: 100px;
-	height: 30px;
-	border-radius: 3px;
-}
- 
-nav button:hover, nav button:active {
-	background-color: #e64553;
-	box-shadow: 1px 1px 1px 1px #dd7878;
-	color: #eff1f5;
+nav a:hover, nav a:active {
+	color: #EA5455;
 }
 
