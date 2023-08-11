@@ -5,102 +5,117 @@ Semester: 2023B
 Assessment: Assignment 1 
 Author: Nguyen Phuc Nguyen
 ID: s4025306
-Acknowledgement: 
+Acknowledgement: Color pallete - https://colorhunt.co/palette/f9f5ebe4dccfea5455002b5b 
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Bookshelf</title>
+	<title>Contact Us</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Contact page of Bookshelf">
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Serif:opsz,wght@8..144,500&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
+	<!-- Header -->
 	<header>
-		<!-- Header -->
-		<img src="./assets/logo-light.png" alt="Logo of Bookshelf">
-		<h1>Bookshelf</h1>
-		<!-- Navigation bar -->
-		<nav>
-			<div><a href="index.html">Home</a></div>
-			<div><a href="pages/fiction/fiction.html">Fiction</a></div>
-			<div><a href="pages/nonfiction/nonfiction">Non-fiction</a></div>
-			<div><a href="pages/textbook/textbook">Textbook</a></div>
-		</nav>
+		<img id="logo" src="assets/logo-light.png" alt="Logo of Bookshelf">
 	</header>
-	<section>
-		<!-- Content of different book categories goes here. -->
-		<h1>Contact Us</h1>
-		<form method="post" enctype="application/x-www-form-urlencoded">
-			<fieldset>
-				<legend>Contact purpose</legend>
+	<!-- Navigation bar -->
+	<nav id="nav-top">
+		<a href="index.html">Home</a>
+		<a href="fiction.html">Fiction</a>
+		<a href="textbook.html">Textbook</a>
+	</nav>
 
-				<select name="contact-purpose" id="contact-purpose">
-					<option value="buy-book">I want to buy books</option>
-					<option value="sell-book">I want to sell book</option>
-				</select>
-			</fieldset>
+	<main>
+		<section class="contact-page">
+			<!-- Content of different book categories goes here. -->
+			<h1>Contact Us</h1>
+			<form method="post" enctype="application/x-www-form-urlencoded" class="contact-form">
+				<fieldset>
+					<legend>Contact purpose</legend>
 
-			<fieldset>
-				<legend>Name</legend>
+					<select name="contact-purpose" id="contact-purpose">
+						<option value="buy-book">I want to buy books</option>
+						<option value="sell-book">I want to sell book</option>
+					</select>
+				</fieldset>
 
-				<input type="text" name="name" id="name" value="">
-			</fieldset>
+				<fieldset>
+					<legend>Name</legend>
 
-			<fieldset>
-				<legend>Email</legend>
+					<input type="text" name="name" id="name" value="">
+				</fieldset>
 
-				<input type="text" name="email" id="email" value="">
-			</fieldset>
+				<fieldset>
+					<legend>Email</legend>
 
-			<fieldset>
-				<legend>Phone number</legend>
+					<input type="text" name="email" id="email" value="">
+				</fieldset>
 
-				<input type="tel" name="phone" id="phone" value="">
-			</fieldset>
+				<fieldset>
+					<legend>Phone number</legend>
 
-			<fieldset>
-				<legend>Contact preferences</legend>
+					<input type="tel" name="phone" id="phone" value="">
+				</fieldset>
 
-				<input type="checkbox" name="preferences" id="by-email" value="By email" />
-				<label for="by-email">By email</label>
+				<fieldset>
+					<legend>Contact preferences</legend>
+					<div class="contact-checkbox" id="email-contact">
+						<input type="checkbox" name="preferences" id="by-email" value="By email">
+						<label for="by-email">By email</label>
+					</div>
 
-				<input type="checkbox" name="preferences" id="by-phone" value="By phone" />
-				<label for="by-phone">By phone</label>
-			</fieldset>
+					<div class="contact-checkbox" id="phone-contact">
+						<input type="checkbox" name="preferences" id="by-phone" value="By phone">
+						<label for="by-phone">By phone</label>
+					</div>
+				</fieldset>
 
-			<fieldset>
-				<legend>Receive weekly newsletter</legend>
+				<fieldset>
+					<legend>Receive weekly newsletter</legend>
 
-				<input type="radio" name="newsletter" id="yes" value="yes" checked>
-				<label for="yes">Yes</label>
+					<div class="newsletter-radio" id="radio-yes">
+						<input type="radio" name="newsletter" id="yes" value="yes" checked>
+						<label for="yes">Yes</label>
+					</div>
 
-				<input type="radio" name="newsletter" id="no" value="no">
-				<label for="no">No</label>
-			</fieldset>
+					<div class="newsletter-radio" id="radio-no">
+						<input type="radio" name="newsletter" id="no" value="no">
+						<label for="no">No</label>
+					</div>
+				</fieldset>
 
-			<fieldset>
-				<legend>Extra notes</legend>
-
-				<input type="text" name="notes" id="extra-notes" value="">
-			</fieldset>
-			<input type="submit" name="submit" value="Submit">
-			<input type="reset" name="reset" value="Reset">
-		</form>
-	</section>
+				<fieldset>
+					<legend>Extra notes</legend>
+					<textarea id="extra-notes" rows="10" cols=""></textarea>
+				</fieldset>
+				<div class="form-buttons">
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Reset">
+				</div>
+			</form>
+		</section>
+	</main>
 	<footer>
 		<!-- Footer -->
 		<!-- Navigation bar -->
-		<nav>
-			<div><a href="pages/about.html">About</a></div>
-			<div><a href="pages/privacy.html">Privacy Policy</a></div>
-			<div><a href="pages/terms.html">Terms and Conditions</a></div>
-			<div><a href="pages/copyright.html">Copyright</a></div>
-			<div><a href="pages/contact.html">Contact Us</a></div>
+		<nav id="nav-bottom">
+			<a href="about.html">About</a>
+			<a href="privacy.html">Privacy Policy</a>
+			<a href="terms.html">Terms and Conditions</a>
+			<a href="copyright.html">Copyright</a>
+			<a href="contact.html">Contact Us</a>
 		</nav>
 	</footer>
 </body>

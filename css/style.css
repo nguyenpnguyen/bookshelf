@@ -10,13 +10,16 @@ Acknowledgement: Color pallete - https://colorhunt.co/palette/f9f5ebe4dccfea5455
 
 * {
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #002B5B;
 }
+
 
 body {
 	background-color: #F9F5EB;
 }
+
+/* CSS for home page and category page */
 
 .category-title h2 a {
 	width: 20%;
@@ -44,7 +47,6 @@ a:link, a:visited {
 header {
 	display: flex;
 	background-color: #002B5B;
-	box-shadow: 0px 1px 2px 1px #bcc0cc;
 }
 
 footer {
@@ -62,38 +64,346 @@ footer a {
 	margin: auto;
 }
 
-.book-category, .book-image, .book-title {
+.book-category, .book-image, .book-title, .book-sub-category {
 	padding: 0.5em;
 	margin: 0.5em;
 	text-align: center;
 }
 
+.book {
+	width: 15%;
+}
+
+.book-sub-category .book {
+	width: 25%;
+}
+
 .book-image img {
-	max-height: 250px;
+	max-width: 100%;
 }
 
 .book-display {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	background-color: #E4DCCF;
-	padding: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	box-shadow: 0px 2px  #E4DCCF;
+	margin-bottom: 3em;
+	text-align: center;
 }
 
 .book-title {
 	max-width: 180px;
 	margin: auto;
+	padding-bottom: 0.8em;
+}
+
+.book-title h3 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.book .book-author h4 {
+	font-size: 0.9em;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.sub-category-name h2 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 1.5em;
 }
 
 nav {
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
-	padding: 0.5em;
+	align-items: stretch;
 	width: 100%;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
 	color: #EA5455;
 }
 
-nav a:hover, nav a:active {
+#nav-top {
+	box-shadow: -2px 1px 2px 2px  #E4DCCF;
+}
+
+#nav-top a {
+	font-family: 'Roboto Serif', serif;
+	font-size: 1em;
+	width: 28%;
+	text-align: center;
+}
+
+#nav-top a:hover, #nav-top a:active {
 	color: #EA5455;
 }
 
+#nav-bottom {
+	font-size: 0.9em;
+	padding: 1em; 
+	margin-top: 1em;
+}
+
+#nav-bottom a:hover, #nav-bottom a:active {
+	text-decoration: underline;
+}
+
+#breadcrumb {
+	margin: auto;
+	margin-top: 2em;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 1em;
+}
+
+#breadcrumb a:hover, #breadcrumb a:active {
+	color: #EA5455;
+}
+
+
+/* CSS for Book detail page */
+
+.book-img-price {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	background-color: #E4DCCF;
+}
+
+.book-img-price div {
+	padding: 1em;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.book-img-price .main-img {
+	width: 30%;
+	padding: 1em;
+	margin-left: 5em;
+}
+
+.book-img-price .small-img {
+	width: 17%;
+}
+
+.book-img-price .small-img img {
+	padding: 0.2em;
+}
+
+.book-img-price img {
+	max-width: 100%;
+}
+
+.book-img-price .book-price {
+	margin: auto;
+}
+
+.book-img-price .book-price * {
+	font-family: 'Roboto Serif', serif;
+}
+
+.book-img-price .book-price h2 {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.book-img-price .book-price button {
+	width: 100%;
+	padding: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #F9F5EB;
+	background-color: #EA5455;
+	border: none;
+	border-radius: 5px;
+}
+
+.book-img-price .book-price button:hover, .book-img-price .book-price button:hover {
+	background-color: #002B5B;
+	color: #F9F5EB;
+}
+
+.book-description {
+	padding: 1em;
+	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	width: 85%;
+}
+
+.book-description #book-name {
+ 	font-size: 2em;
+	font-weight: 500;
+	font-family: 'Roboto Serif', serif;
+}
+
+.book-description #book-author {
+ 	font-size: 1.2em;
+	font-weight: 400;
+	font-style: italic;
+	padding-bottom: 1.2em;
+	padding-top: 0.2em;
+}
+
+.book-description #language {
+	padding-top: 1em;
+ 	font-size: 1em;
+	font-weight: 400;
+}
+
+
+/* CSS for Contact page */
+
+.contact-page h1 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch; 
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 40%;
+	box-shadow: 0px 2px 2px 2px #E4DCCF;
+}
+
+.contact-form fieldset, .contact-form div{
+	border: none;
+	margin: auto;
+	width: 80%;
+}
+
+.contact-form textarea {
+	width: 100%;
+}
+
+.contact-form fieldset legend,.contact-form fieldset input  {
+	margin: auto;
+	width: 100%;
+}
+
+.contact-form fieldset legend {
+	font-family: 'Roboto Serif', serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	padding-top: 1.5em;
+}
+
+.contact-form #by-email, .contact-form #by-phone, .contact-form #yes, .contact-form #no {
+	width: 10%;
+}
+
+.contact-form #extra-notes {
+	height: 10em;
+	text-align: left;
+}
+
+.contact-form .form-buttons input {
+	padding: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 0.9em;
+	font-weight: 500;
+	color: #F9F5EB;
+	background-color: #EA5455;
+	border: none;
+	border-radius: 5px;
+}
+
+.contact-form .form-buttons input:hover, .contact-form .form-buttons input:active {
+	background-color: #002B5B;
+	color: #F9F5EB;
+}
+
+
+/* CSS for About page */
+
+.about-page h1 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-align: center;
+	padding: 1em;
+}
+
+.about-page .about-content {
+	font-size: 1.2em;
+	width: 50%;
+	margin: auto;
+	padding: 1em;
+	box-shadow: 0px 2px 2px 2px #E4DCCF;
+	line-height: 1.8em;
+	margin-bottom: 3em;
+}
+
+.about-page .about-content #welcome {
+	font-size: 1em;
+	font-weight: 400;
+	padding-bottom: 1.5em;
+}
+
+.about-page .about-content a {
+	color: #EA5455;
+}
+
+.about-page .about-content a:hover, .about-page .about-content a:active {
+	text-decoration: underline;
+}
+
+.about-page .google-map {
+	width: 70%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.about-page .google-map .store-address h3 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	padding-bottom: 1em;
+}
+.about-page .google-map .store-address p {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+
+/* CSS for Privacy page */
+
+.privacy-page h1, .terms-page h1, .copyright-page h1 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-align: center;
+	padding: 1em;
+}
+
+.privacy-page .privacy-content, .terms-page .terms-content, .copyright-page .copyright-content {
+	font-size: 1em;
+	width: 80%;
+	margin: auto;
+	padding: 1em;
+	box-shadow: 0px 2px 2px 2px #E4DCCF;
+	line-height: 1.8em;
+	margin-bottom: 3em;
+}
+
+.privacy-page .privacy-content p, .terms-page .terms-content p, .copyright-page .copyright-content p {
+	padding: 0.5em;
+}
