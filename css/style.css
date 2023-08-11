@@ -467,6 +467,14 @@ nav {
 	.book-img-price .small-img {
 		width: 28%;
 	}
+
+	.about-page .about-content {
+		width: 80%;
+	}
+
+	.contact-page .contact-form {
+		width: 80%;
+	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -475,8 +483,13 @@ nav {
 		align-items: space-around;
 		flex-wrap: wrap;
 	}
+
 	.book {
 		width: 30%;
+	}
+
+	.about-page .google-map {
+		width: 90%;
 	}
 }
 
@@ -499,5 +512,15 @@ nav {
 
 	#nav-bottom div {
 		padding: 1px 0px;
+	}
+
+	.about-page .google-map {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-page .google-map .store-address {
+		padding-bottom: 1.5em;
 	}
 }
