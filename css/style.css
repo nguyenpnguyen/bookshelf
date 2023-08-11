@@ -14,7 +14,6 @@ Acknowledgement: Color pallete - https://colorhunt.co/palette/f9f5ebe4dccfea5455
 	color: #002B5B;
 }
 
-
 body {
 	background-color: #F9F5EB;
 }
@@ -96,9 +95,8 @@ footer a {
 }
 
 .book-title {
-	max-width: 180px;
-	margin: auto;
-	padding-bottom: 0.8em;
+	width: 90%;
+	padding-bottom: 0;
 }
 
 .book-title h3 {
@@ -111,6 +109,7 @@ footer a {
 	font-size: 0.9em;
 	font-weight: 400;
 	font-style: italic;
+	padding-bottom: 3em;
 }
 
 .sub-category-name h2 {
@@ -386,7 +385,7 @@ nav {
 }
 
 
-/* CSS for Privacy page */
+/* CSS for Privacy, Terms and Copyright page */
 
 .privacy-page h1, .terms-page h1, .copyright-page h1 {
 	font-family: 'Roboto Serif', serif;
@@ -430,12 +429,12 @@ nav {
 	}
 
 	#nav-top {
-			display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      height: auto;
-      padding: 5px 20px;
-    }
+		display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    padding: 5px 20px;
+  }
 
 	#nav-top {
 		display: none;
@@ -444,7 +443,7 @@ nav {
 	.mobile-nav-icon:hover, .mobile-nav-icon:active {
 		color: #F9F5EB;
 	}
-	
+
 	.mobile-nav-icon:hover+#nav-top, .mobile-nav-icon:active+#nav-top {
 		display: block;
 	}
@@ -496,5 +495,9 @@ nav {
 		display: flex;
 		flex-direction: column;
 		padding: 10px 20px;
+	}
+
+	#nav-bottom div {
+		padding: 1px 0px;
 	}
 }
