@@ -504,6 +504,16 @@ nav {
 		width: 45%;
 	}
 
+	.book-sub-category .book-display {
+		display: flex;
+		align-items: space-around;
+		flex-wrap: wrap;
+	}
+
+	.book-sub-category .book {
+		width: 60%;
+	}
+
 	#nav-bottom {
 		display: flex;
 		flex-direction: column;
